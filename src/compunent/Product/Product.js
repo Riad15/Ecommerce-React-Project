@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactModal from '../ReactModal/ReactModal';
 
+
+
 const Product = (props) => {
     const { addItem } = props;
-    const { title, id, price, image } = props.products;
+    const { title, image } = props.products;
     return (
-        <div className='col-md-4'>
+        <div className='col-md-4' data-aos="zoom-in">
             <div className="card p-3 border mb-4 ">
                 <h1>{title.slice(0, 10)}</h1>
                 <img className='w-50 m-auto' src={image} alt="" />
